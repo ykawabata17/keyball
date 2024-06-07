@@ -3,21 +3,21 @@
 #define TAP_CODE_DELAY 5
 
 // OLED 消灯までの時間(ミリ秒)
-#define OLED_TIMEOUT 30000
+// #define OLED_TIMEOUT 30000
 
 // レイヤー切り替えの長押しまでの判定時間(ミリ秒)
-#define TAPPING_TERM 180
+// #define TAPPING_TERM 180
 
 // レイヤーの数
-#define DYNAMIC_KEYMAP_LAYER_COUNT 6 
+// #define DYNAMIC_KEYMAP_LAYER_COUNT 6 
 
 // マウス速度（default: 500）
-#define KEYBALL_CPI_DEFAULT 1100
+// #define KEYBALL_CPI_DEFAULT 1100
 // スクロール速度（default: 4）
-#define KEYBALL_SCROLL_DIV_DEFAULT 5
+// #define KEYBALL_SCROLL_DIV_DEFAULT 5
 
 // コンボの同時押し時間
-#define COMBO_TERM 80
+// #define COMBO_TERM 80
 
 // マウスレイヤーの設定
 // #define POINTING_DEVICE_AUTO_MOUSE_ENABLE // 有効化
