@@ -71,8 +71,10 @@ void oledkit_render_info_user(void) {
 #endif
 
 // マウスレイヤーの有効化
+/*
 #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
 void pointing_device_init_user(void) {
     set_auto_mouse_enable(true);
 }
 #endif
+*/
