@@ -2,9 +2,6 @@
 
 #define TAP_CODE_DELAY 5
 
-#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
-#define AUTO_MOUSE_DEFAULT_LAYER 1
-
 // OLED の消灯までの時間
 #define OLED_TIMEOUT 30000
 
@@ -19,5 +16,5 @@
 
 // マウスレイヤーの有効化
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE // 有効化
-#define AUTO_MOUSE_DEFAULT_LAYER 4 // 切り替えるマウスレイヤー番号を指定
+#define AUTO_MOUSE_DEFAULT_LAYER 5 // 切り替えるマウスレイヤー番号を指定
 #define AUTO_MOUSE_TIME 300 // マウスが止まってから元のレイヤーに戻るまでの時間(ms)
