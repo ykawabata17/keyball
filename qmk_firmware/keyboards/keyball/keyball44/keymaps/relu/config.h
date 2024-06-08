@@ -42,11 +42,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KEYBALL_SCROLL_DIV_DEFAULT 5      // スクロール速度
 #define COMBO_TERM 80                     // コンボ判定時間
 #define COMBO_ONLY_FROM_LAYER 0           // レイヤーに依存しないコンボ(レイヤー0のキーマップのみ反映)
-#define POINTING_DEVICE_AUTO_MOUSE_ENABLE // Automatic Mouse Layer 有効化
-#define AUTO_MOUSE_DEFAULT_LAYER 2        // Automatic Mouse Layer で切り替えるレイヤー番号
-#define AUTO_MOUSE_TIME 500               // Automatic Mouse Layer で元のレイヤーに戻るまでの時間
 
-// カスタム定義
-#define LAYER_LED_ENABLE                  // レイヤーLED 有効化
-#define PRECISION_ENABLE                  // プレシジョンモード 有効化
-#define PRECISION_CPI 4                   // プレシジョンモード で変更するCPI (1/100の値を指定)
