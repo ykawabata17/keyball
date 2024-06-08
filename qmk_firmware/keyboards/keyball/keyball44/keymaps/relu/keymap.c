@@ -20,6 +20,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "quantum.h"
 
+// コンボキーの設定
+#ifdef COMBO_ENABLE
+const uint16_t PROGMEM my_bs[] = {KC_Y, KC_H, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(my_bs, KC_BSPC),
+};
+#endif
+
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // keymap for default (VIA)
