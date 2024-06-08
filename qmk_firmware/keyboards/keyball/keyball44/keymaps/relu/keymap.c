@@ -20,24 +20,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "quantum.h"
 
-// コンボキーの設定
+////////////////////////////////////
+///
+/// コンボキーの設定 ここから
+///
+////////////////////////////////////
 #ifdef COMBO_ENABLE
 const uint16_t PROGMEM lang_ja[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM lang_en[] = {KC_J, KC_K, COMBO_END};
-
 
 combo_t key_combos[] = {
     COMBO(lang_ja, KC_LNG1),
     COMBO(lang_en, KC_LNG2),
 };
 #endif
+////////////////////////////////////
+///
+/// コンボキーの設定 ここまで 
+///
+////////////////////////////////////
 
-// マウスレイヤーの設定
-#ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
-void pointing_device_init_user(void) {
-    set_auto_mouse_enable(true);
-}
-#endif
+
+
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
