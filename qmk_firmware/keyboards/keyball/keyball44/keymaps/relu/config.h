@@ -38,7 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NO_BACKLIGHT
 #define NO_RGBLIGHT
 
-#define OLED_TIMEOUT 30000                // OLED自動消灯時間
 #define TAPPING_TERM 180                  // キー長押し時間
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5      // レイヤー数
 #define KEYBALL_CPI_DEFAULT 1100          // マウス速度
