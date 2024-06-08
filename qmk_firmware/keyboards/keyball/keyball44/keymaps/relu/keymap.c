@@ -31,8 +31,8 @@ const uint16_t PROGMEM lang_ja[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM lang_en[] = {KC_J, KC_K, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(lang_ja, KC_LNG2),
-    COMBO(lang_en, KC_LNG1),
+    COMBO(lang_ja, KC_LNG1),
+    COMBO(lang_en, KC_LNG2),
 };
 #endif
 ////////////////////////////////////
@@ -242,10 +242,10 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report)
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // keymap for default (VIA)
   [0] = LAYOUT_universal(
-    KC_ESC    , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                        KC_Y     , KC_U     , KC_I     , KC_O      , KC_P           , _______   ,
-    _______   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                        KC_H     , KC_J     , KC_K     , KC_L      , LT(3,KC_SCLN)  , KC_QUOT   ,
-    KC_LSFT   , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,                                        KC_N     , KC_M     , KC_COMM  , _______   , KC_SLSH        , MO(4)     ,
-            KC_LALT , _______ ,   LCMD_T(KC_TAB) , LCTL(KC_SPC), LSFT(KC_DEL),                  LT(1,KC_BSPC), LT(2,KC_ENT), LT(4,KC_DOT),     KC_RALT   , KC_PSCR
+    KC_ESC   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                        KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_DEL   ,
+    KC_TAB   , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                        KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , S(KC_7)  ,
+    KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,                                        KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_INT1  ,
+              KC_LALT,KC_LGUI,LCTL_T(KC_LNG2)     ,LT(1,KC_SPC),LT(3,KC_LNG1),                  KC_BSPC,LT(2,KC_ENT), RCTL_T(KC_LNG2),     KC_RALT  , KC_PSCR
   ),
 
   [1] = LAYOUT_universal(
@@ -280,4 +280,3 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
-
