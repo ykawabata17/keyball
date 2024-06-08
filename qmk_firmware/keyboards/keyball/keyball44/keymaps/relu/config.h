@@ -35,6 +35,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAP_CODE_DELAY 5
 
+#define NO_BACKLIGHT
+#define NO_RGBLIGHT
+
 #define OLED_TIMEOUT 30000                // OLED自動消灯時間
 #define TAPPING_TERM 180                  // キー長押し時間
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5      // レイヤー数
